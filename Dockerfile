@@ -4,7 +4,7 @@ MAINTAINER Tim Cera <tim@cerazone.net>
 ENV VERSION v1.7.2
 
 RUN apt-get update -y && \
-    apt-get install -y \
+    apt-get install -y --fix-missing \
         curl           \
         git            \
         gconf2         \
