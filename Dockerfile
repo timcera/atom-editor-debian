@@ -17,7 +17,9 @@ RUN apt-get update -y && \
         gvfs-bin       \
         xdg-utils      \
         make           \
-        gcc
+        gcc            \
+        g++            \
+        pandoc
 RUN apt-get clean
 RUN curl -L https://github.com/atom/atom/releases/download/${VERSION}/atom-amd64.deb > /tmp/atom.deb
 RUN dpkg -i /tmp/atom.deb
